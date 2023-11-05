@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    height: 100%
+}
+
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+svg{
+    background-color: whitesmoke;
+    font: 10px sans-serif;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#canvas{
+    min-width: 1000px;
+    min-height: 600px
+}
+.tile-text {
+  cursor: default;
+}
+
+#title {
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 30px;
+  font-weight: bold;
+}
+#description {
+  text-align: center;
+  font-size: 1em;
+  padding-top: 30px;
+  font-style: italic;
+}
+#tooltip {
+  position: absolute;
+  padding: 10px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+#legend {
+    width:1000px;
+    height: 200px;
+    background: #ffff;
+  }
