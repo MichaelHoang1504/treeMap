@@ -33,7 +33,7 @@ fetch( 'https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-g
   }).sum( d => {
     return d['value']
   }).sort((a,b)=>{
-    return b['height'] - a['height'] || b['value'] - a['value'];
+    return b['value'] - a['value'];
   })
   let treeMap = d3.treemap().size([1000, 600]);
   treeMap(hierarchy);
@@ -70,7 +70,7 @@ fetch( 'https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-g
            .attr('height', d=> {
     return d['y1'] - d['y0'];
   })
-  .on('mousemove', function (d) {
+  .on('mousemove', function (event, d) {
         tooltip.style('opacity', 0.9);
         tooltip
           .html(
